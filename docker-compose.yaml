@@ -24,7 +24,7 @@ services:
       context: .
       dockerfile: Dockerfile-jenkins
     restart: always
-    ports:https://github.com/guretaq/infra-devops
+    ports:
       - "8080:8080"
     volumes:
       - jenkins_home:/var/jenkins_home
